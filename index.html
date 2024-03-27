@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="second.css" />
+    <link rel="icon" type="image/png" href="birthday-cake.png" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Estonia&family=Splash&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="counter">
+        <h1 id="headline">Awaiting My Love's Birthday</h1>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span> days</li>
+            <li><span id="hours"></span> Hours</li>
+            <li><span id="minutes"></span> Minutes</li>
+            <li><span id="seconds"></span> Seconds</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="content" class="emoji" style="align-items: center">
+        <div
+          id="playme"
+          class="playbtn-container justify-content-center align-items-center"
+          style="display: flex"
+        >
+          <div>
+            <div class="playbtn mx-auto">
+              <img src="start-button.png" width="100%" alt="" />
+            </div>
+            <div class="loader" id="loader">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="fireworksvg"
+          id="fireworksvg"
+          style="position: absolute; top: -20px; left: 0; display: none"
+        >
+          <canvas id="fireworksCanvas"></canvas>
+        </div>
+
+        <div class="container" id="cont" style="display: none">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 order-1 order-lg-1 order-sm-2">
+              <div
+                class="card d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <video id="myVideo" width="100%" loop autoplay>
+                    <source src="vd.mp4" type="video/mp4" />
+                  </video>
+
+                  <div
+                    class="next-page d-none d-md-block mx-auto"
+                    id="nextPage"
+                  >
+                    <div>
+                      <a href="second.html
+                        ><img
+                          src="right-arrow.png"
+                          width="100%"
+                          alt=""
+                        />Next</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 order-2 order-lg-2 order-sm-1">
+              <div class="block">
+                <div>
+                  <div class="frames frame1">
+                    <!-- <img src="img1.png" alt="" /> -->
+                    <p>
+                      အချစ်ဆုံးရေ..
+                      အခက်ခဲတွေကိုအမြဲတမ်းပြုံးပြုံးလေးနဲ့ပဲရင်ဆိုင်ရမယ်နော်...
+                      ငါ့ချစ်သူလေးကပြုံးနေရင်ချစ်ဖို့ကောင်းတာသိတယ်မလား...တစ်ချိန်ကျရင်
+                      အခက်ခဲတွေက
+                      ရယ်စရာအမှတ်တရတစ်ခုတောင်ဖြစ်သွားနိုင်တာပဲလေနော်...
+                    </p>
+                  </div>
+                  <div class="frames frame2">
+                    <!-- <img src="img2.png" alt="" /> -->
+                    <p>
+                      ငါ့ချစ်သူလေး ရန်သူမျိူးငါးပါးအန္တရာယ်မှကင်းဝေးပါစေ..
+                      အိပ်မက်တွေကိုအမြန်လှမ်းနိုင်ပါစေ..
+                      ရည်မှန်းထားတဲ့အလုပ်တွေလည်း အနှောက်ယှက်မရှိ Plan အတိုင်း
+                      တိတိကျကျလုပ်ဆောင်နိုင်ပါစေ...
+                    </p>
+                  </div>
+                  <div class="frames frame3">
+                    <!-- <img src="img3.png" alt="" /> -->
+                    <p>
+                      စိတ်ရောကိုယ်ပါကျန်းမာပြီး
+                      အချိန်တိုင်းလန်းဆန်းတက်ကြွပါစေ.သောကကင်းပြီး
+                      ဘဝတစ်လျှောက်လုံးအေးချမ်းပါစေ..ကောင်းခြင်းသတင်းတွေနဲ့ပတ်ဝန်းကျင်မှာရနံ့သင်းပါစေ..အရေးကြီးဆုံးကတော့ပျော်ရွှင်ပါစေ..
+                    </p>
+                  </div>
+                  <div class="frames frame4">
+                    <p>
+                      ငါ့ချစ်သူလေးလှမ်းတဲ့ခြေလှမ်းတိုင်းမှာ
+                      ကိုယ်ကဘေးကနေအားပေးရင်းအတူလိုက်ပါပေးမှာမလို့
+                      ဘယ်တော့မှတစ်ယောက်ထဲဆိုပြီးမတွေးနဲ့နော်
+                      ဒီလက်ကလေးကိုဘယ်တော့မှမလွှတ်ဘူး
+                    </p>
+                  </div>
+                  <div class="frames frame4">
+                    <p>
+                      အမြဲတမ်းချစ်မယ် သစ္စာလည်းရှိမယ်...ပြည့်စုံတဲ့ဘဝဆိုရင်
+                      အတူတူစံစားကြမယ် ခက်ခဲဲရင်လည်းတူတူရုန်းကန်ကြမယ်...
+                      အားမလျှော့ကြေး စိတ်ဓာတ်မကျကြေး...baby pyae sone
+                      လေးတွေအတွက်အတူတူကြိုးစားကြမယ်နော်...
+                    </p>
+                  </div>
+
+                  <div
+                    class="next-page d-block d-md-none mx-auto"
+                    id="nextPage"
+                  >
+                    <div>
+                      <a href="final/index.html"
+                        ><img
+                          src="right-arrow.png"
+                          width="100%"
+                          alt=""
+                        />Next</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+    <script>
+      const loader = document.getElementById("loader");
+
+      // Function to toggle slide-in and slide-out animations
+      function toggleLoaderAnimation() {
+        if (loader.classList.contains("slide-out")) {
+          loader.classList.remove("slide-out");
+          loader.style.animation = "slide-in 2s forwards";
+        } else {
+          loader.classList.add("slide-out");
+          loader.style.animation = "slide-out 2s forwards";
+        }
+      }
+      setInterval(() => {
+        loader.classList.toggle("slide-in");
+        loader.classList.toggle("slide-out");
+      }, 6000);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var video = document.getElementById("myVideo");
+        var playme = document.getElementById("playme");
+        var loader = document.getElementById("loader");
+        var nextPage = document.getElementById("nextPage");
+        var videoContainer = document.getElementById("cont");
+        var fireworksvg = document.getElementById("fireworksvg");
+        playme.addEventListener("click", function () {
+          video.currentTime = 0;
+          video.play();
+          videoContainer.style.display = "block";
+          fireworksvg.style.display = "block";
+          playme.style.display = "none";
+          loader.style.display = "none";
+        });
+        nextPage.addEventListener("click", function () {
+          video.pause();
+        });
+      });
+    </script>
+    <script src="fireworks.js"></script>
+  </body>
+</html>
