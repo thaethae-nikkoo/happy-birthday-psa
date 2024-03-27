@@ -79,12 +79,8 @@
                     id="nextPage"
                   >
                     <div>
-                      <a href="second.html
-                        ><img
-                          src="right-arrow.png"
-                          width="100%"
-                          alt=""
-                        />Next</a
+                      <a href="second.html">
+                        <img src="right-arrow.png" width="100%" alt="" />Next</a
                       >
                     </div>
                   </div>
@@ -189,7 +185,7 @@
         var video = document.getElementById("myVideo");
         var playme = document.getElementById("playme");
         var loader = document.getElementById("loader");
-        var nextPage = document.getElementById("nextPage");
+
         var videoContainer = document.getElementById("cont");
         var fireworksvg = document.getElementById("fireworksvg");
         playme.addEventListener("click", function () {
@@ -199,9 +195,6 @@
           fireworksvg.style.display = "block";
           playme.style.display = "none";
           loader.style.display = "none";
-        });
-        nextPage.addEventListener("click", function () {
-          video.pause();
         });
       });
     </script>

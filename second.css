@@ -234,6 +234,7 @@ body {
   /* position: relative;
   top: 100px;
   left: 40%; */
+
   animation: next 1s ease 16.5s 1 forwards;
   visibility: hidden;
 }
